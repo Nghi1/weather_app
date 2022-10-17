@@ -1,0 +1,86 @@
+*{
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50% 0;
+}
+.container{
+    border-radius: 16px;
+    width: 20rem;
+    height: 30rem;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.location{
+   padding: 0 20px;
+   font-size: 20px;
+}
+.search{
+   margin-left: 20px;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 3rem;
+    height: 3rem;
+}
+.search:hover{
+    border-radius: 32px;
+    background-color: gray;
+}
+input{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    width: 10rem;
+    height: 10rem;
+}
+.other-box{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin: auto;
+    display: flex;
+}
+.wind-speed{
+    margin: auto;
+    display: flex;
+}
+.hum-text, .wind-text{
+    display: flex;
+    flex-direction: column;
+}
+.nowhere-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nowhere{
+    width: 10rem;
+    height: 10rem;
+}
