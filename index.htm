@@ -9,28 +9,28 @@
     <script src="https://kit.fontawesome.com/b346c635be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="search-box">
             <div class="location"><i class="fa-solid fa-location-dot"></i></div>
         <input id="inputText" type="text" placeholder="Enter Your Location"/>
         <a onclick="sendResult()" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-        <div class="nowhere-box">
+        <div class="nowhere-box" id="nowhere-box">
             <img class="nowhere" src="./nowhere.png" alt="nowhere">
             <div class="description">Oops! Invalid Location :/</div>
         </div>
         <div class="main-box">
-            <img class="sun" src="./sun.png" alt="sun">
-            <div class="temp">15</div>
-            <div class="info">Clear Sky</div>
+            <img class="sun" id="iconTemp" alt="sun">
+            <div id="temp" class="temp"></div>
+            <div id="info" class="info"></div>
         </div>
         <div class="other-box">
             <div class="humidity"><i class="fa-solid fa-water"></i><div class="hum-text">
-                <div class="num">79%</div>
+                <div id="humidity" class="num"></div>
                 <div class="description">Humidity</div>
             </div></div>
             <div class="wind-speed"><i class="fa-solid fa-wind"></i><div class="wind-text">
-                <div class="num">2Km/h</div>
+                <div id="windSpeed" class="num"></div>
                 <div class="description">Wind Speed</div>
             </div></div>
         </div>
