@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b346c635be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">    
+    <div class="content">
+        <h1>WEATHER APP</h1>
+        <p>Ex: Vietnam, London, Hcm,...</p>
+        <div class="container" id="container">
+            <div class="search-box">
+                <div class="location"><i class="fa-solid fa-location-dot"></i></div>
+            <input id="inputText" type="text" placeholder="Enter Your Location"/>
+            <a onclick="sendResult()" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nowhere-box" id="nowhere-box">
+                <img class="nowhere" src="./nowhere.png" alt="nowhere">
+                <div class="description">Oops! Invalid Location :/</div>
+            </div>
+            <div class="main-box">
+                <img class="sun" id="iconTemp" alt="sun">
+                <div id="temp" class="temp"></div>
+                <div id="info" class="info"></div>
+            </div>
+            <div class="other-box">
+                <div class="humidity"><i class="fa-solid fa-water"></i><div class="hum-text">
+                    <div id="humidity" class="num"></div>
+                    <div class="description">Humidity</div>
+                </div></div>
+                <div class="wind-speed"><i class="fa-solid fa-wind"></i><div class="wind-text">
+                    <div id="windSpeed" class="num"></div>
+                    <div class="description">Wind Speed</div>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
